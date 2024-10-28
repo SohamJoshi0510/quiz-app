@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBC</title>
+    <link rel="stylesheet" href="kbc.css">
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <a href="#" class="logo">QuizWiz</a>
+            <nav class="navbar">
+                <a href="search.html">Home</a>
+            </nav>
+        </header>
+        <div class="container">
+            <section class="quiz-section">
+                <div class="quiz-box">
+                    <h1>Work hard in silence, let your success be your noise.</h1>
+                    <div class="quiz-header">
+                        <span></span>
+                        <span class="header-score">Score: 0 / 5</span>
+                    </div>
+                    <h2 class="question-text">${obj.questionText}</h2>
+
+                    <div class="option-list"></div>
+                    <div class="quiz-footer">
+                        <span class="question-total">1 out of 5 questions</span>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+                <div class="result-box">
+                    <h2>Quiz Result!</h2>
+                    <div class="percentage-container">
+                        <div class="circular-progress">
+                            <span class="progress-value">0%</span>
+                        </div>
+
+                        <span class="score-text">
+                            Score: 0 out of 5
+                        </span>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="tryAgain-btn">Try Again</button>
+                        <button class="goHome-btn">Home</button>
+                    </div>
+                </div>
+            </section>
+            <section class="home">
+                <div class="home-content">
+                    <h1>Prepare to Quiz!</h1>
+                    <p>
+                    With a variety of engaging quizzes, it's time to challenge yourself<br> and have some fun!</p>
+                    <button class="start-btn">Start Quiz</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="popup-info">
+        <h2>Quiz Guide</h2>
+        
+        <span class="info">The quiz has 5 questions.</span>
+        <span class="info">Correct answers are worth 1 point each.</span>
+        <span class="info">Enjoy!!</span>
+        <div class="btn-grp">
+            <button class="exit-btn">Exit</button>
+            <a href="#"><button class="continue-btn">Continue</button></a>
+        </div>
+        <script src="kbc.js"></script>
+        <script src="questions.js"></script>
+</body>
+
+</html>
